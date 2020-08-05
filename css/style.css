@@ -200,7 +200,7 @@ nav ul li a:hover::after{
   
 }
 
-/* ------------------------------ button */
+/* ------------------------------ get a quote button */
 
 body{
     height: 100vh;
@@ -268,4 +268,80 @@ body{
 
 .project-question-position{
     text-align: center;
+}
+
+/* -------------------------------- modal */
+
+.bg-modal {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.modal-content {
+    width: 550px;
+    height: 400px;
+    background-color: white;
+    border-radius: 5px;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+
+.button {
+    background-color: rgb(219, 135, 8);
+    border: 2px solid white;
+    border-radius: 30px;
+    text-decoration: none;
+    padding: 10px 28px;
+    color: white;
+    margin-top: 10px;
+    display: inline-block;
+    font-size: 15px;
+}
+
+.button:hover {
+    background-color: white;
+    color: rgb(219, 135, 8);
+    border: 2px solid rgb(219, 135, 8);
+}
+
+input {
+    width: 50%;
+    display: block;
+    margin: 15px auto;
+    font-size: 15px;
+    font-family: "Roboto Cn", sans-serif;
+}
+
+.logo {
+    height: 150px;
+    width: 175px;
+}
+
+.text-area {
+    width: 50%;
+    display: block;
+    margin: 15px auto;
+    font-size: 15px;
+    font-family: "Roboto Cn", sans-serif;
+    resize: vertical;
+    max-height: 50px;
+    min-height: 20px;
+    line-height: 1;
+}
+
+.close {
+    position: absolute;
+    top: 0;
+    right: 14px;
+    font-size: 42px;
+    transform: rotate(45deg);
+    cursor: pointer;
 }
